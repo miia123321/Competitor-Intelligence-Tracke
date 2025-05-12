@@ -1,16 +1,19 @@
-# Python Games Documentation
+# CompetiScan: AI Competitor Intelligence Tracker
 
 ## Overview
-This project contains three Python games implemented using Pygame:
-1. Snake Game
-2. Pong Game
-3. Combined Menu System
+CompetiScan is an AI-powered platform that automates competitor intelligence for businesses. It tracks competitors’ websites, news, and social media, summarizes key developments, and delivers actionable insights via email and dashboard.
 
-## Installation Requirements
-```
-pygame==2.6.1
-```
+## Key Features
+- **Automated Crawling:** Monitors competitor websites, LinkedIn, and news daily.
+- **AI Summarization:** Extracts and summarizes key events (e.g., product launches, executive changes).
+- **Email Reports:** Sends regular email updates with trend charts and visual summaries.
+- **Interactive Dashboard:** View competitors, events, and trends in a modern React frontend.
 
+## Tech Stack
+- **Backend:** FastAPI (Python), SQLAlchemy, Celery, OpenAI API
+- **Frontend:** React
+- **Database:** SQLite (default, can be swapped)
+- **Deployment:** Render (backend), Netlify (frontend), Hugging Face Spaces (optional)
 ## How to Run
 1. Make sure you have Python and Pygame installed
 2. Run the combined menu: `python3 combined_games.py`
@@ -108,3 +111,4 @@ pygame==2.6.1
 - Event-driven architecture
 - Consistent frame rate (60 FPS)
 - Efficient collision detection
+
