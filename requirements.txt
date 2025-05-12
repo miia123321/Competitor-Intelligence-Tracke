@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+requests
+beautifulsoup4
+pydantic
+python-dotenv
+httpx
+celery
+jinja2
+smtplib
+plotly
+openai
