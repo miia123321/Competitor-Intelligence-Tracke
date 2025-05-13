@@ -107,3 +107,10 @@ async def match_jobs(qualifications: Qualifications):
             matches.append({"job": job, "score": score})
     matches.sort(key=lambda x: x["score"], reverse=True)
     return {"matches": matches}
+if __name__ == "__main__":
+    import uvicorn
+    import os
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=False)
+    # force refresh for render deploy
+
